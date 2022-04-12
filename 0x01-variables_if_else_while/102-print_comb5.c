@@ -6,21 +6,24 @@
 */
 int main(void)
 {
-	int l, m;
+	int numbl, numbm;
 
-	for (l = '0'; l <= '8'; l++)
+	for (numbl = '0'; numbl <= 98; numbl++)
 	{
-		for (m = '1'; m <= '9'; m++)
+		for (numbm = numbl + 1; numbm <= 99; numbm++)
 		{
-			putchar(l);
-			putchar(m);
-			if (l != '8' || m != '9')
-			{
-				putchar(',');
+			putchar((numbl / 10) + '0');
+			putchar((numbl % 10) + '0');
 				putchar(' ');
-			}
+			putchar((numbm / 10) + '0');
+			putchar((numbm % 10) + '0');
+
+			if (numbl == 98 && numbm == 99)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
-		m = l + 2;
 	}
+	putchar('\n');
 	return (0);
 }
