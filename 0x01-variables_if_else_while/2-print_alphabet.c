@@ -1,14 +1,15 @@
 #include <stdio.h>
 /**
-  * main -Prints the alphabetic
+  * main -Entry point
   *
-Retur: Always (Success)
+Return: Always  if successesful
 */
 int main(void)
+
 {
 	char c;
 	for (c = 'a'; c <= 'z'; c++)
 		putchar(c);
-	putchar('\n')
-		return (0)
+	putchar('\n');
+		return (0);
 }
