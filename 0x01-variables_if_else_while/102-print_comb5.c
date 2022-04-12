@@ -8,7 +8,7 @@ int main(void)
 {
 	int numbl, numbm;
 
-	for (numbl = '0'; numbl <= 98; numbl++)
+	for (numbl = 0; numbl <= 98; numbl++)
 	{
 		for (numbm = numbl + 1; numbm <= 99; numbm++)
 		{
