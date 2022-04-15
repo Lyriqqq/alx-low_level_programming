@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_times_table - ptints the timetable for n
+ * print_times_table - prints times table
  * @n : times table to use
  * Return:void
  */
@@ -49,3 +49,4 @@ while (a <= n)
 	a++;
 }
 }
+
