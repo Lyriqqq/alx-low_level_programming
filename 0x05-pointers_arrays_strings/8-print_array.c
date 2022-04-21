@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_array - Function that prints n elements of an array of integers, followed by a new line
+ * print_array - Function that prints n elements of an array of integers, 
+ * followed by a new line
  * @a: int type array pointer
  * @n: int type integer
  * Description: Numbers must be separated by comma and space.
