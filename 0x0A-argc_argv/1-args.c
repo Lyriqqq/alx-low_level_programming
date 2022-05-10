@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - function that  prints an argument passed to it, followed by a new line
+ * main - function that  prints an argument passed to it
+ * followed by a new line
  * @argc: x args
  * @argv: array  args
  * Return: 0
