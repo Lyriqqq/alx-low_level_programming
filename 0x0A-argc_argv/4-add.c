@@ -1,38 +1,32 @@
 #include <stdio.h>
 
 /**
- *main - adds numbers
- *
- *@argc: argumentcounter
- *@argv: vector array
- *Return: 0 
- */
+  * main - Function that adds positive numbers
+  * @argv: argument vector
+  * @argc: argument counter
+  * Return: 0
+  **/
+
 int main(int argc, char *argv[])
 {
-	int x;
-	int add = 0;
-	int y;
+	int x, y, sum = 0;
 
 	if (argc == 1)
 	{
 		printf("0\n");
+		return (0);
 	}
-	else
+	for (x = 1; x < argc; x++)
 	{
-		for (x = 1; x < argc; x++)
+		for (y = 0; argv[x][y]; y++)
 		{
-			for (y = 0; argv[x][y] != '\0'; y++)
+			if (isdigit(argv[x][y]) == 0)
 			{
-				if (argv[x][y] < '0' || argv[x][y] > '9')
-				{
-					printf("Error\n");
-
-					return (1);
-				}
+				printf("Error\n");
+				return (1);
 			}
-			add += atoi(argv[x]);
 		}
-		printf("%d\n", add);
+		sum += atoi(argv[x]);
 	}
+	printf("%d\n", sum);
 	return (0);
-}
