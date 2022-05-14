@@ -6,7 +6,7 @@
   * argstostr - Function that concatenates all the arguments of the program
   * @ac: width of the grid
   * @av: height of the grid
-  * Return:NULL if ac == 0 or av == NULL or a pointer to a new string or NULL if it fails
+  * Return: pointer to a new string or NULL if it fails
   **/
 
 char *argstostr(int ac, char **av)
