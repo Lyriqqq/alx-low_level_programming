@@ -3,22 +3,37 @@
 #include <stdlib.h>
 
 /**
- * **strtow - function that splits a string into words
- * @str: The array
- *
- * Return: char
+ * strtow - this function splits a string by words.
+ * @str: the string
+ * Return: the words
  */
 char **strtow(char *str)
 {
-	int i;
-	char **s;
+	int a, c, d;
+	char **w;
 
-	if (str == NULL)
+	c = 0;
+	d = 0;
+	if (*str == '\0' || str == NULL)
 		return (NULL);
-	for (i = 0; str[i]; i++)
-		;
-	s = malloc(i);
-	if (s == NULL)
+	for (a = 0; str[a]; a++)
+	{
+		if (str[a] != ' ')
+		{
+			d++;
+			if (str[a - 1] == ' ')
+			{
+				c++;
+			}
+		}
+	}
+	if (str[0] != ' ')
+	{
+		c++;
+	}
+	w = malloc(c * sizeof(char *));
+	if (w == NULL)
+	{
 		return (NULL);
-	return (s);
-}
+	}
+	return (w);
