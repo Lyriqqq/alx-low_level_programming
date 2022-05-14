@@ -1,27 +1,33 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
 
 /**
- * main - Check the code
- * @argc: number of arguments
- * @argv: arguments
- * Return: Nothing
+ * main - multiplies two positive numbers
+ * @argc: n arguments
+ * @argv: vector argument
+ * Return: int
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int num1, num2, result;
-
+unsigned long mul;
+int x, y;
 	if (argc != 3)
+	{ printf("Error\n");
+	exit(98); }
+	for (x = 1; y< argc; x++)
 	{
-		printf("Error\n");
-		exit(98);
+		for (y = 0; argv[x][y] != '\0'; y++)
+		{
+			if (argv[x][y] > 57 || argv[x][y] < 48)
+			{  printf("Error\n");
+			exit(98); }
+		}
+
 	}
-	else
-	{
-		num1 = atoi(argv[1]);
-		num2 = atoi(argv[2]);
-		result = num1 * num2;
-		printf("%d\n", result);
-		return (0);
-	}
+	mul = atol(argv[1]) *atol(argv[2]);
+	printf("%lu\n", mul);
+return (0);
 }
