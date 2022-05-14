@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /**
-  * argstostr - Function that concatenates all the arguments of the program
+  * argstostr - Function that concatenates all the arguments
+  * of the program
   * @ac: width of the grid
   * @av: height of the grid
   * Return: pointer to a new string or NULL if it fails
