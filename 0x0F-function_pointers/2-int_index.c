@@ -7,7 +7,7 @@
   * @array: array
   * @size: size of the array
   * @cmp: pointer to the function used to compare values
-  * Return: the index of the first element for which the cmp funcction 
+  * Return: the index of the first element for which the cmp funcction
   * does not return 0
  **/
 
